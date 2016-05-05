@@ -1,3 +1,5 @@
+#include <iostream>
+
 struct ListNode {
   int mValue;
   ListNode* mNext;
@@ -16,4 +18,12 @@ ListNode* CreateListFromArray(int array[], int length) {
     endNode->mNext = nullptr;
   }
   return head;
+}
+
+void PrintList(ListNode* head) {
+  ListNode* node = head;
+  while(node) {
+      std::cout << node->mValue << std::endl;
+      node = node->mNext;
+  }
 }

@@ -9,3 +9,4 @@ set(HEADER_FILES ../utils/ListNode.h)
 
 include_directories(../utils/)
 add_executable(PrintListFromEnd PrintListFromEnd.cpp)
+add_executable(ReverseList ReverseList.cpp)
