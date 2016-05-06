@@ -90,12 +90,16 @@ void PostOrderTraversal(TreeNode* root) {
 
 int main() {
 
-  TreeNode node1 = {NULL, NULL, 1};
-  TreeNode node2 = {NULL, NULL, 2};
-  TreeNode node0 = {&node1, &node2, 100};
-  TreeNode node3 = {NULL, NULL, 3};
-  TreeNode root = {&node0, &node3, 250};
+  TreeNode node1(1);
+  TreeNode node2(2);
+  TreeNode node0(100);
+  TreeNode node3(3);
+  TreeNode root(250);
 
+  root.mLeftChild = &node0;
+  root.mRightChild = &node3;
+  node0.mLeftChild = &node1;
+  node0.mRightChild = &node2;
   //       250
   //     //   \\
   //   100     3

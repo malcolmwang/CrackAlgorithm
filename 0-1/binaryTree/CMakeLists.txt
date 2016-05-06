@@ -9,3 +9,4 @@ set(HEADER_FILES ../utils/TreeNode.h)
 
 include_directories(../utils/)
 add_executable(BinaryTreeTraversing BinaryTreeTraversing.cpp)
+add_executable(TreeDepth TreeDepth.cpp)
