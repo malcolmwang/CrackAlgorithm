@@ -7,3 +7,4 @@ project(${PROJECT_NAME})
 set(CMAKE_CXX_FLAGS "-g -Wall")
 
 add_executable(QuickSort QuickSort.cpp)
+add_executable(HeapSort HeapSort.cpp)
